@@ -35,4 +35,4 @@
 4. Press "Enter" to stop CPU load
 5. Enter "Ctrl+C" in the terminal with "read_logs.sh"
 6. Run following command:
-```sudo docker-compose stop```
+```docker-compose stop```
