@@ -1,0 +1,8 @@
+version: "2"
+services:
+  ros_cpu_publisher:
+    build: ros_cpu_publisher
+    volumes:
+      - ./logs:/logs
+
+      

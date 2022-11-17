@@ -50,4 +50,6 @@ RUN rosdep init \
 RUN rosdep install -i --from-path src --rosdistro foxy -y \
     && colcon build --packages-select py_pub
 
+RUN mkdir /logs
+
 CMD . /opt/ros/foxy/setup.sh && . install/setup.sh && ros2 run py_pub talker

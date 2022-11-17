@@ -22,7 +22,7 @@ class MinimalPublisher(Node):
         self.publisher_.publish(msg)
         self.get_logger().info('Publishing: "%s"' % msg.data)
         self.i += 1
-        with open("cpu_load.log", "a") as f_obj:
+        with open("/logs/cpu_load.log", "a") as f_obj:
             f_obj.write(mst_str)
             f_obj.write("\n")
 
